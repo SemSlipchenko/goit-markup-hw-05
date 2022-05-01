@@ -18,7 +18,7 @@
             <nav class="header-nav">
                 <a class="header-nav-logo logo" href="index.html">Web<span>Studio</span></a>
                 <ul class="header-list">
-                    <li class="header-list-item"><a class="header-list-item-link link" href="index.html">Студия</a></li>
+                    <li class="header-list-item"><a class="header-list-item-link link --active" href="index.html">Студия</a></li>
                     <li class="header-list-item"><a class="header-list-item-link link" href="portfolio.html">Портфолио</a></li>
                     <li class="header-list-item"><a class="header-list-item-link link" href="#">Контакты</a></li>
                 </ul>
@@ -39,7 +39,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button class="hero-btn" type="submit">Заказать услугу</button>
+                <button class="hero-btn" type="submit" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <section class="advantage">
@@ -95,14 +95,17 @@
                     <li class="whatwedo-list-item">
                         <a class="whatwedo-list-item-link" href="#"><img class="whatwedo-list-item-img" src="./images/whatwedo1.jpg"
                                 width="370" alt="Что мы делаем"></a>
+                        <p class="whatwedo-img-text">Десктопные приложения</p>
                     </li>
                     <li class="whatwedo-list-item">
                         <a class="whatwedo-list-item-link" href="#"><img class="whatwedo-list-item-img" src="./images/whatwedo2.jpg"
                                 width="370" alt="Что мы делаем"></a>
+                        <p class="whatwedo-img-text">Мобильные приложения</p>
                     </li>
                     <li class="whatwedo-list-item">
                         <a class="whatwedo-list-item-link" href="#"><img class="whatwedo-list-item-img" src="./images/whatwedo3.jpg"
                                 width="370" alt="Что мы делаем"></a>
+                        <p class="whatwedo-img-text">Дизайнерские решения</p>
                     </li>
                 </ul>
             </div>
@@ -359,5 +362,11 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-close" type="button" data-modal-close>X</button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
