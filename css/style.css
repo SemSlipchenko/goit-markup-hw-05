@@ -572,8 +572,8 @@ button {
     letter-spacing: 0.03em;
     color: var(--main-color);
     border: none;
-    background-color: var(--background-secondary-color);
-    border-radius: 5px;
+    background-color: var(--background-third-color);
+    border-radius: 4px;
     padding: 6px 22px;
 
     transition: background-color var(--transition-data), color var(--transition-data), box-shadow var(--transition-data);
@@ -599,8 +599,6 @@ button {
 }
 
 .cards-list-item {
-    overflow: hidden;
-    position: relative;
     list-style-type: none;
     border: 1px solid #EEEEEE;
     background-color: var(--background-secondary-color);
@@ -611,6 +609,11 @@ button {
     flex-basis: calc(100% / 3 - 30px);
 
     transition: box-shadow var(--transition-data);
+}
+
+.card-overlay-wrap {
+    position: relative;
+    overflow: hidden;
 }
 
 .card-overlay {
